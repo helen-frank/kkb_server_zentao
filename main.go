@@ -8,39 +8,34 @@ package main
 
 import (
 	"database/sql"
-	"encoding/json"
-	"fmt"
-	"kka-zentao-server/common/message"
-	"kka-zentao-server/utils"
+	"kka-zentao-server/db"
 
 	_ "github.com/go-sql-driver/mysql"
 )
 
-var db *sql.DB //连接池对象
+var db_zentao *sql.DB //连接池对象
+var db_kkb *sql.DB
 
-func init() {
-	sc := message.SqlConfig{}
-	err := json.Unmarshal(utils.ReadConfig("./config.json"), &sc)
-	if err != nil {
-		fmt.Println("main.go | init() | json解析config.json文件失败")
-		panic(err)
-	}
-
-	db, err = sql.Open("mysql", utils.StringStitching(sc.Account, ":", sc.Password, "@tcp(", sc.Ip, sc.Port, ")/", sc.Database))
-	db.Ping()
-	defer func() {
-		if db != nil {
-			db.Close()
-		}
-	}()
-	if err != nil {
-		fmt.Println("数据库链接失败")
-		panic(err)
-	}
-	//设置数据库连接池的最大连接数
-	db.SetMaxIdleConns(sc.MaxIdleConns)
+func initdb() {
+	db_kkb = db.LinkSql("./config_kkb.json") // 拿回来是个空？？？
+	db_zentao = db.LinkSql("./config_zentao.json")
 }
 
 func main() {
+	initdb()
+	defer func() {
+		if db_kkb != nil {
+			db_kkb.Close()
+		}
+	}()
+
+	defer func() {
+		if db_zentao != nil {
+			db_zentao.Close()
+		}
+	}()
+
+	looUpStr := "SELECT suanke_student.user_id,suanke_student.real_name, suanke_user.email, suanke_user.mobile_number FROM suanke_user,suanke_student  where suanke_user.id=suanke_student.user_id;"
+	db.KkbUserLookUp(db_kkb, looUpStr)
 
 }

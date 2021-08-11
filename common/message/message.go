@@ -10,3 +10,10 @@ type SqlConfig struct {
 	Database     string `json:"database"`
 	MaxIdleConns int    `json:"maxIdleConns"`
 }
+
+type User struct {
+	UserId       string `json:"userId"`
+	RealName     string `json:"realName"`
+	Email        string `json:"email"`
+	MobileNumber string `json:"mobileNumber"`
+}

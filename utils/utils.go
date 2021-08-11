@@ -26,7 +26,7 @@ func FastMD5(str string) string {
 func ReadConfig(filename string) []byte {
 	fi, err := os.Open(filename)
 	if err != nil {
-		fmt.Println("utils | utils.go | readConfig() | 打开config.json文件失败，请把config.json文件放置于该程序同级目录")
+		fmt.Println("utils | utils.go | readConfig() | 打开" + filename + "文件失败，请把文件放置于该程序同级目录")
 		panic(err)
 	}
 	defer fi.Close()
