@@ -18,7 +18,6 @@ func LinkSql(fileName string) *sql.DB {
 		panic(err)
 	}
 	db, err := sql.Open("mysql", utils.StringStitching(sc.Account, ":", sc.Password, "@tcp(", sc.Ip, sc.Port, ")/", sc.Database))
-
 	db.Ping()
 
 	if err != nil {
@@ -49,9 +48,9 @@ func ZenTaoInsert(db *sql.DB, sqlStr string) {
 }
 
 // 查询kkb用户数据
-func KkbUserLookUp(db *sql.DB, sqlStr string) {
+func KkbUserLookUp(db1 *sql.DB, db2 *sql.DB, sqlStr string) {
 
-	rows, err := db.Query(sqlStr)
+	rows, err := db1.Query(sqlStr)
 
 	if err != nil {
 		fmt.Printf("query failed, err: %v\n", err)
@@ -66,10 +65,29 @@ func KkbUserLookUp(db *sql.DB, sqlStr string) {
 
 		err := rows.Scan(&u.UserId, &u.RealName, &u.Email, &u.MobileNumber)
 		if err != nil {
-			fmt.Printf("scan failed, err:%v\n", err)
+			fmt.Printf("user.go | KkbUserLookUp | rows.scan failed, err:%v\n", err)
 			return
 		}
-		//fmt.Printf("id:%s name:%s email:%s mobilePhone:%s\n", u.UserId, u.RealName, u.Email, u.MobileNumber)
+		u.Account = u.MobileNumber
+		u.Id = u.UserId + 1000
+		if u.Email != "" {
+			u.Password = utils.FastMD5(u.Email)
+		} else {
+			u.Password = utils.FastMD5("123456")
+		}
+		u.Company = 0
+		u.Role = "dev"
+
+		zenTaoinsertStr := "INSERT IGNORE INTO zt_user(id,company,account,password,role,commiter,avatar,email,mobile,nature,analysis,strategy) values (?,?,?,?,?,?,?,?,?,?,?,?)"
+
+		r, err := db2.Exec(zenTaoinsertStr, u.Id, u.Company, u.Account, u.Password, u.Role, 1, 1, u.Email, u.MobileNumber, 1, 1, 1)
+		if err != nil {
+			fmt.Printf("user.go | KkbUserLookUp | db2.Exec failed, err:%v\n", err)
+		}
+
+		fmt.Println(r.LastInsertId())
+
+		//fmt.Printf("id:%d name:%s email:%s mobilePhone:%s\n", u.UserId, u.RealName, u.Email, u.MobileNumber)
 
 	}
 }

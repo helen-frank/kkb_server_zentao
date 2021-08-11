@@ -12,8 +12,13 @@ type SqlConfig struct {
 }
 
 type User struct {
-	UserId       string `json:"userId"`
+	UserId       int    `json:"userId"`
 	RealName     string `json:"realName"`
 	Email        string `json:"email"`
 	MobileNumber string `json:"mobileNumber"`
+	Company      int    `json:"company"`
+	Account      string `json:"account"`
+	Password     string `json:"password"`
+	Role         string `json:"role"`
+	Id           int    `json:"id"`
 }

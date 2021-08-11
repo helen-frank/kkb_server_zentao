@@ -2,7 +2,7 @@
     "account": "root",
     "password": "010227",
     "ip": "127.0.0.1",
-    "port": ":3306",
+    "port": ":10031",
     "database": "zentao",
     "maxIdleConns": 10
 }

@@ -17,7 +17,7 @@ var db_zentao *sql.DB //连接池对象
 var db_kkb *sql.DB
 
 func initdb() {
-	db_kkb = db.LinkSql("./config_kkb.json") // 拿回来是个空？？？
+	db_kkb = db.LinkSql("./config_kkb.json") //
 	db_zentao = db.LinkSql("./config_zentao.json")
 }
 
@@ -35,7 +35,7 @@ func main() {
 		}
 	}()
 
-	looUpStr := "SELECT suanke_student.user_id,suanke_student.real_name, suanke_user.email, suanke_user.mobile_number FROM suanke_user,suanke_student  where suanke_user.id=suanke_student.user_id;"
-	db.KkbUserLookUp(db_kkb, looUpStr)
+	looUpStr := "SELECT suanke_student.user_id,suanke_student.real_name, suanke_user.email, suanke_user.mobile_number FROM suanke_user,suanke_student  where suanke_user.id=suanke_student.user_id  ORDER BY suanke_student.user_id limit 10;"
+	db.KkbUserLookUp(db_kkb, db_zentao, looUpStr)
 
 }
