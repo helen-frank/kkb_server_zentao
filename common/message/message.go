@@ -12,7 +12,8 @@ type SqlConfig struct {
 }
 
 type User struct {
-	UserId       int    `json:"userId"`
+	//UserId       int    `json:"userId"`
+	//Id           int    `json:"id"`
 	RealName     string `json:"realName"`
 	Email        string `json:"email"`
 	MobileNumber string `json:"mobileNumber"`
@@ -20,5 +21,18 @@ type User struct {
 	Account      string `json:"account"`
 	Password     string `json:"password"`
 	Role         string `json:"role"`
-	Id           int    `json:"id"`
+	Gender       string `json:"gender"`
+	// 暂时未知参数，设为 nil
+	Commiter interface{} `json:"commiter"`
+	Avatar   interface{} `json:"avatar"`
+	Nature   interface{} `json:"nature"`
+	Analysis interface{} `json:"analysis"`
+	Strategy interface{} `json:"strategy"`
+}
+
+type KkbUser struct {
+	RealName     string `json:"realName"`
+	MobileNumber string `json:"mobileNumber"`
+	Email        string `json:"email"`
+	Gender       string `json:"gender"`
 }
