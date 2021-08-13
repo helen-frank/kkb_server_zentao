@@ -1,15 +1,15 @@
 package dboperate
 
 import (
+	"bytes"
 	"database/sql"
 	"encoding/json"
 	"errors"
 	"fmt"
+	"io/ioutil"
 	"kka-zentao-server/common/message"
 	"kka-zentao-server/server/utils"
-	"net"
-	"net/rpc"
-	"net/rpc/jsonrpc"
+	"net/http"
 
 	_ "github.com/go-sql-driver/mysql"
 )
@@ -37,11 +37,9 @@ func LinkSql(fileName string) *sql.DB {
 	return db
 }
 
-// 查询kkb用户数据
-func KkbUserLookUp(db1 *sql.DB, sqlStr string) {
+// 查询kkb用户数据并插入到zentao
+func KkbUserLookUp(db1 *sql.DB, sqlStr, url string) {
 	var u message.User
-	var replay string
-
 	rows, err := db1.Query(sqlStr)
 
 	if err != nil {
@@ -53,13 +51,11 @@ func KkbUserLookUp(db1 *sql.DB, sqlStr string) {
 
 	// 循环读取结果集中的数据
 	for rows.Next() {
-		conn, err := net.Dial("tcp", ":10227")
 		if err != nil {
 			err = errors.New(fmt.Sprintln("连接失败", err))
 			fmt.Println(err)
 			return
 		}
-		client := rpc.NewClientWithCodec(jsonrpc.NewClientCodec(conn))
 		err = rows.Scan(&u.RealName, &u.MobileNumber, &u.Email)
 		if err != nil {
 			err = errors.New(fmt.Sprintln("user.go | KkbUserLookUp | rows.scan failed, err:\n", err))
@@ -67,13 +63,37 @@ func KkbUserLookUp(db1 *sql.DB, sqlStr string) {
 			return
 		}
 		u.Gender = "f"
-		err = client.Call("zts.ZenTaoInsertUser", u, &replay)
+		jsonStr, err := json.Marshal(u)
 		if err != nil {
-			err = errors.New(fmt.Sprintln("user.go | KkbUserLookUp | client.Call -> zts.ZenTaoInsertUser 调用失败,err: ", err))
+			err = errors.New(fmt.Sprintln("user.go | KkbUserLookUp | json.Marshal failed, err:\n", err))
 			fmt.Println(err)
 			return
 		}
-		fmt.Print(replay)
-
+		req, err := http.NewRequest("POST", url, bytes.NewBuffer(jsonStr))
+		if err != nil {
+			err = errors.New(fmt.Sprintln("user.go | KkbUserLookUp | json.Marshal failed, err:\n", err))
+			fmt.Println(err)
+			return
+		}
+		req.Header.Set("Content-Type", "application/json")
+		client := &http.Client{}
+		resp, err := client.Do(req)
+		if err != nil {
+			err = errors.New(fmt.Sprintln("user.go | KkbUserLookUp | client.Do failed, err:\n", err))
+			fmt.Println(err)
+			return
+		}
+		defer resp.Body.Close()
+		statuscode := resp.StatusCode
+		hea := resp.Header
+		body, err := ioutil.ReadAll(req.Body)
+		if err != nil {
+			err = errors.New(fmt.Sprintln("user.go | KkbUserLookUp | ioutil.ReadAll failed, err:\n", err))
+			fmt.Println(err)
+			return
+		}
+		fmt.Println(string(body))
+		fmt.Println(statuscode)
+		fmt.Println(hea)
 	}
 }

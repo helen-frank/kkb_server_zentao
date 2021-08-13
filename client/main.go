@@ -23,6 +23,7 @@ func main() {
 	}()
 
 	looUpStr := "SELECT suanke_student.real_name,suanke_user.mobile_number,suanke_user.email FROM suanke_user,suanke_student  where suanke_user.id=suanke_student.user_id  ORDER BY suanke_student.user_id limit 100;"
+	zentaourl := "http://127.0.0.1:10227/user/ZenTaoInsertUser"
 	fmt.Println("KkbUserLookUp service start")
-	dboperate.KkbUserLookUp(db_kkb, looUpStr)
+	dboperate.KkbUserLookUp(db_kkb, looUpStr, zentaourl)
 }

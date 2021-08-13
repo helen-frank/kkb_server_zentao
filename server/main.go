@@ -8,11 +8,12 @@ package main
 
 import (
 	"database/sql"
+	"encoding/json"
 	"errors"
 	"fmt"
+	"kka-zentao-server/common/message"
 	"kka-zentao-server/server/dboperate"
 	"net/http"
-	"net/rpc"
 
 	"github.com/gin-gonic/gin"
 	_ "github.com/go-sql-driver/mysql"
@@ -27,33 +28,52 @@ func main() {
 			db_zentao.Close()
 		}
 	}()
+	zts := dboperate.ZenTaoService{
+		Db_zentao: db_zentao,
+	}
 
 	r := gin.Default()
 	userGroup := r.Group("/user")
 	{
 		// userGroup.GET("/inquire", func(c *gin.Context) {})
 		userGroup.POST("/ZenTaoInsertUser", func(c *gin.Context) {
+			u := message.KkbUser{}
+			var replay string
 			b, err := c.GetRawData()
-
 			if err != nil {
-				c.JSON(http.StatusOK, gin.H{
+				c.JSON(http.StatusAccepted, gin.H{
 					"err": err,
 				})
+				err = errors.New(fmt.Sprintln("main.go | userGroup.POST(\"/ZenTaoInsertUser\") | c.GetRawData failed , err: ", err))
+				fmt.Println(err)
 				return
 			}
 
+			err = json.Unmarshal(b, &u)
+			if err != nil {
+				c.JSON(http.StatusAccepted, gin.H{
+					"err": err,
+				})
+				err = errors.New(fmt.Sprintln("main.go | userGroup.POST(\"/ZenTaoInsertUser\") | json.Unmarshal failed , err: ", err))
+				fmt.Println(err)
+				return
+			}
+			err = zts.ZenTaoInsertUser(u, &replay)
+			if err != nil {
+				c.JSON(http.StatusAccepted, gin.H{
+					"err":    err,
+					"replay": replay,
+				})
+				err = errors.New(fmt.Sprintln("main.go | userGroup.POST(\"/ZenTaoInsertUser\") | zts.ZenTaoInsertUser failed , err: ", err))
+				fmt.Println(err)
+				return
+			}
+
+			// 执行完毕
+			c.JSON(http.StatusOK, gin.H{
+				"replay": replay,
+			})
 		})
 	}
-	r.Run()
-
-	rpc.RegisterName("zts", &dboperate.ZenTaoService{
-		Db_zentao: db_zentao,
-	})
-
-	if err != nil {
-		err = errors.New(fmt.Sprintln("main.go | net.Listen err:", err))
-		panic(err)
-	}
-
-	fmt.Println("zentao server rpc start monitor Port 10227")
+	r.Run(":10227")
 }
