@@ -3,11 +3,21 @@ package utils
 import (
 	"bytes"
 	"crypto/md5"
+	"errors"
 	"fmt"
 	"io/ioutil"
 	"kka-zentao-server/common/message"
 	"os"
+	"time"
+
+	"github.com/dgrijalva/jwt-go"
 )
+
+type MyClaims struct {
+	UserName string `json:"userName"`
+	Password string `json:"password"`
+	jwt.StandardClaims
+}
 
 // MD5字符串
 func FastMD5(str string) string {
@@ -26,7 +36,7 @@ func FastMD5(str string) string {
 func ReadConfig(filename string) []byte {
 	fi, err := os.Open(filename)
 	if err != nil {
-		fmt.Println("utils | utils.go | readConfig() | 打开" + filename + "文件失败，请把文件放置于该程序同级目录")
+		fmt.Println("utils | utils.go | readConfig() | 打开" + filename + "文件失败，请把文件放置于config目录")
 		panic(err)
 	}
 	defer fi.Close()
@@ -47,4 +57,41 @@ func StringStitching(str ...string) string {
 		buf.WriteString(v)
 	}
 	return buf.String()
+}
+
+// GenToken 生成JWT
+func GenToken(username, password string) (string, error) {
+	// 创建一个我们自己的声明
+	//fmt.Println("mc", username, password)
+	mc := MyClaims{
+		UserName: username, // 自定义字段
+		Password: password,
+		StandardClaims: jwt.StandardClaims{
+			ExpiresAt: time.Now().Add(message.TokenExpireDuration).Unix(), // 过期时间
+			Issuer:    "helen",                                            // 签发人
+		},
+	}
+
+	// 使用指定的签名方法创建签名对象
+	tokenClaims := jwt.NewWithClaims(jwt.SigningMethodHS256, mc)
+	// 使用指定的secret签名并获得完整的编码后的字符串token
+	return tokenClaims.SignedString(message.SecretKey)
+}
+
+// ParseToken 解析JWT
+func ParseToken(tokenString string) (*MyClaims, error) {
+	// 解析token
+	tokenClaims, err := jwt.ParseWithClaims(tokenString, &MyClaims{}, func(token *jwt.Token) (interface{}, error) {
+		return message.SecretKey, nil
+	})
+	if err != nil {
+		return nil, err
+	}
+	if tokenClaims != nil {
+		if claims, ok := tokenClaims.Claims.(*MyClaims); ok && tokenClaims.Valid { // 校验token
+			//fmt.Println(claims)
+			return claims, nil
+		}
+	}
+	return nil, errors.New("invalid token")
 }

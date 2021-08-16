@@ -38,8 +38,9 @@ func LinkSql(fileName string) *sql.DB {
 }
 
 // 查询kkb用户数据并插入到zentao
-func KkbUserLookUp(db1 *sql.DB, sqlStr, url string) {
+func KkbUserLookUp(db1 *sql.DB, sqlStr, url, token string) {
 	var u message.User
+	u.Token = token
 	rows, err := db1.Query(sqlStr)
 
 	if err != nil {
@@ -69,6 +70,7 @@ func KkbUserLookUp(db1 *sql.DB, sqlStr, url string) {
 			fmt.Println(err)
 			return
 		}
+
 		req, err := http.NewRequest("POST", url, bytes.NewBuffer(jsonStr))
 		if err != nil {
 			err = errors.New(fmt.Sprintln("user.go | KkbUserLookUp | json.Marshal failed, err:\n", err))
