@@ -87,7 +87,7 @@ func KkbUserLookUp(db1 *sql.DB, sqlStr, url, token string) {
 		}
 		defer resp.Body.Close()
 		statuscode := resp.StatusCode
-		hea := resp.Header
+		//hea := resp.Header
 		body, err := ioutil.ReadAll(req.Body)
 		if err != nil {
 			err = errors.New(fmt.Sprintln("user.go | KkbUserLookUp | ioutil.ReadAll failed, err:\n", err))
@@ -96,6 +96,5 @@ func KkbUserLookUp(db1 *sql.DB, sqlStr, url, token string) {
 		}
 		fmt.Println(string(body))
 		fmt.Println(statuscode)
-		fmt.Println(hea)
 	}
 }
