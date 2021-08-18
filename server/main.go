@@ -8,17 +8,33 @@ package main
 
 import (
 	"database/sql"
-	"kka-zentao-server/server/dboperate"
-	"kka-zentao-server/server/network"
+	"fmt"
+	"kkb-zentao-server/server/dboperate"
+	"kkb-zentao-server/server/network"
+	"os"
+	"os/exec"
+	"path/filepath"
+	"strings"
 
 	"github.com/gin-gonic/gin"
 	_ "github.com/go-sql-driver/mysql"
+	"gopkg.in/ini.v1"
 )
 
 var db_zentao *sql.DB //连接池对象
 
 func main() {
-	db_zentao = dboperate.LinkSql("./config/config_zentao.json")
+	file, _ := exec.LookPath(os.Args[0])
+	path, _ := filepath.Abs(file)
+	index := strings.LastIndex(path, string(os.PathSeparator))
+	path = path[:index]
+	cfg, err := ini.Load(path+"/etc/my.cnf")
+	if err != nil {
+		fmt.Printf("Fail to read file: %v", err)
+		os.Exit(1)
+	}
+	Port := cfg.Section("server").Key("port").String()
+	db_zentao = dboperate.LinkSql(path+"/etc/config_zentao.json")
 	defer func() {
 		if db_zentao != nil {
 			db_zentao.Close()
@@ -31,14 +47,14 @@ func main() {
 	r := gin.Default()
 	r.GET("/auth", network.ZenTaoAuthHandler) // 获取token
 
-	userGroup := r.Group("/user")
+	userGroup := r.Group("/user", network.ZenTaoTokenCheck())
 	{
 		userGroup.POST("/ZenTaoInsertUser", network.ZenTaoInsertUserHandler(&zts))
 	}
 
-	projectGroup := r.Group("/project")
+	projectGroup := r.Group("/project", network.ZenTaoTokenCheck())
 	{
 		projectGroup.POST("/ZenTaoInsertUserProject", network.ZenTaoInsertUserProjectHandler(&zts))
 	}
-	r.Run(":10227")
+	r.Run(":" + Port)
 }

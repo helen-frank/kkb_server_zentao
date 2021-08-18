@@ -6,7 +6,7 @@ import (
 	"errors"
 	"fmt"
 	"io/ioutil"
-	"kka-zentao-server/common/message"
+	"kkb-zentao-server/common/message"
 	"os"
 	"time"
 
@@ -36,7 +36,7 @@ func FastMD5(str string) string {
 func ReadConfig(filename string) []byte {
 	fi, err := os.Open(filename)
 	if err != nil {
-		fmt.Println("utils | utils.go | readConfig() | 打开" + filename + "文件失败，请把文件放置于config目录")
+		fmt.Println("utils | utils.go | readConfig() | 打开" + filename + "文件失败，请把文件放置于etc目录")
 		panic(err)
 	}
 	defer fi.Close()
@@ -89,7 +89,6 @@ func ParseToken(tokenString string) (*MyClaims, error) {
 	}
 	if tokenClaims != nil {
 		if claims, ok := tokenClaims.Claims.(*MyClaims); ok && tokenClaims.Valid { // 校验token
-			//fmt.Println(claims)
 			return claims, nil
 		}
 	}

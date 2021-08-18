@@ -4,8 +4,8 @@ import (
 	"database/sql"
 	"encoding/json"
 	"fmt"
-	"kka-zentao-server/common/message"
-	"kka-zentao-server/server/utils"
+	"kkb-zentao-server/common/message"
+	"kkb-zentao-server/server/utils"
 
 	_ "github.com/go-sql-driver/mysql"
 )

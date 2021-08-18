@@ -3,8 +3,8 @@ package dboperate
 import (
 	"database/sql"
 	"fmt"
-	"kka-zentao-server/common/message"
-	"kka-zentao-server/server/utils"
+	"kkb-zentao-server/common/message"
+	"kkb-zentao-server/server/utils"
 )
 
 type ZenTaoService struct {
