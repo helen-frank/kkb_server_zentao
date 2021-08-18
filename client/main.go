@@ -30,7 +30,6 @@ func main() {
 		}
 	}()
 
-	looUpStr := "SELECT suanke_student.real_name,suanke_user.mobile_number,suanke_user.email FROM suanke_user,suanke_student  where suanke_user.id=suanke_student.user_id  ORDER BY suanke_student.user_id limit 100;"
 	getToken := "http://127.0.0.1:10227/auth?username=test1&password=010227"
 	// getToken := "http://39.103.184.136:10227/auth?username=test1&password=010227"
 	resp1, err := http.Get(getToken)
@@ -46,7 +45,12 @@ func main() {
 		return
 	}
 
-	zentaourl := "http://127.0.0.1:10227/user/ZenTaoInsertUser"
+	//zentaouserinserturl := "http://127.0.0.1:10227/user/ZenTaoInsertUser"
 	fmt.Println("KkbUserLookUp service start")
-	dboperate.KkbUserLookUp(db_kkb, looUpStr, zentaourl, gettokens.Token)
+	//UserInsertStr := "SELECT suanke_student.real_name,suanke_user.mobile_number,suanke_user.email FROM suanke_user,suanke_student  where suanke_user.id=suanke_student.user_id  ORDER BY suanke_student.user_id limit 100;"
+	//dboperate.KkbUserInsert(db_kkb, UserInsertStr, zentaouserinserturl, gettokens.Token)
+
+	zentaouserinserturl := "http://127.0.0.1:10227/project/ZenTaoInsertUserProject"
+	UserProjectInsertStr := "SELECT suanke_user.mobile_number FROM suanke_user,suanke_student  where suanke_user.id=suanke_student.user_id  ORDER BY suanke_student.user_id limit 100"
+	dboperate.KkbUserProjectInsert(db_kkb, UserProjectInsertStr, zentaouserinserturl, gettokens.Token)
 }

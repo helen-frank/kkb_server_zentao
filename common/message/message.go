@@ -25,6 +25,20 @@ type SqlConfig struct {
 	MaxIdleConns int    `json:"maxIdleConns"`
 }
 
+// 开课吧添加用户
+type Kkb struct {
+	RealName     string `json:"realName"`
+	MobileNumber string `json:"mobileNumber"`
+	Email        string `json:"email"`
+	Gender       string `json:"gender"`
+	Token        string `json:"token"`
+	Account      string `json:"account"`
+	Password     string `json:"password"`
+	Days         int    `json:"days"`
+	Root         int    `json:"root"`
+}
+
+// ZenTao用户
 type User struct {
 	//UserId       int    `json:"userId"`
 	//Id           int    `json:"id"`
@@ -45,14 +59,14 @@ type User struct {
 	Strategy interface{} `json:"strategy"`
 }
 
-type KkbUser struct {
-	RealName     string `json:"realName"`
-	MobileNumber string `json:"mobileNumber"`
-	Email        string `json:"email"`
-	Gender       string `json:"gender"`
-	Token        string `json:"token"`
+// zentao项目
+type UserProject struct {
+	Kkb
+	Role  string  `json:"role"`
+	Hours float32 `json:"hours"`
 }
 
+// 获取token校验
 type UserInfo struct {
 	UserName string `json:"userName"`
 	Password string `json:"password"`

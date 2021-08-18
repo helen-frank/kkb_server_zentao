@@ -35,5 +35,10 @@ func main() {
 	{
 		userGroup.POST("/ZenTaoInsertUser", network.ZenTaoInsertUserHandler(&zts))
 	}
+
+	projectGroup := r.Group("/project")
+	{
+		projectGroup.POST("/ZenTaoInsertUserProject", network.ZenTaoInsertUserProjectHandler(&zts))
+	}
 	r.Run(":10227")
 }
