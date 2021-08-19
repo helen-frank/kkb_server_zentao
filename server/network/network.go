@@ -26,7 +26,7 @@ func ZenTaoAuthHandler(c *gin.Context) {
 		err = errors.New(fmt.Sprintln("network.go | json.Unmarshal failed , err: ", err))
 		fmt.Println(err)
 		c.JSON(http.StatusInternalServerError, gin.H{
-			"msg": "打开etc/Account.json失败",
+			"err": err,
 		})
 		return
 	}
@@ -40,14 +40,14 @@ func ZenTaoAuthHandler(c *gin.Context) {
 		// 生成Token
 		tokenString, _ := utils.GenToken(user.ApiKey, user.SecretKey)
 		c.JSON(http.StatusOK, gin.H{
-			"msg":   "success",
 			"token": tokenString,
+			"err":   nil,
 		})
 		// 校验用户用户正确，保留账户密码以及token
 		return
 	}
 	c.JSON(http.StatusUnauthorized, gin.H{
-		"msg": "鉴权失败",
+		"err": "鉴权失败",
 		// 写明失败原因
 	})
 }
@@ -60,25 +60,28 @@ func ZenTaoInsertUserHandler(zts *dboperate.ZenTaoService) func(c *gin.Context) 
 		var u message.Kkb
 		b, err := io.ReadAll(c.Request.Body)
 		if err != nil {
-			c.JSON(http.StatusAccepted, gin.H{
-				"msg": "请将数据json化传递,或者是io.ReadAll(c.Request.Body) failed",
-			})
+
 			err = errors.New(fmt.Sprintln("main.go | userGroup.POST(\"/ZenTaoInsertUser\") | io.ReadAll(c.Request.Body) failed , err: ", err))
 			fmt.Println(err)
+			c.JSON(http.StatusOK, gin.H{
+				"msg": "请将数据json化传递,或者是io.ReadAll(c.Request.Body) failed",
+				"err": err,
+			})
 			return
 		}
 		err = json.Unmarshal(b, &u)
 		if err != nil {
-			c.JSON(http.StatusAccepted, gin.H{
-				"msg": "json解析失败",
-			})
 			err = errors.New(fmt.Sprintln("main.go | userGroup.POST(\"/ZenTaoInsertUser\") | json.Unmarshal(b, &u) failed , err: ", err))
 			fmt.Println(err)
+			c.JSON(http.StatusOK, gin.H{
+				"msg": "json解析失败",
+				"err": err,
+			})
 			return
 		}
 		err = zts.ZenTaoInsertUser(u, &replay)
 		if err != nil {
-			c.JSON(http.StatusAccepted, gin.H{
+			c.JSON(http.StatusOK, gin.H{
 				"err":    err,
 				"replay": replay,
 			})
@@ -89,6 +92,7 @@ func ZenTaoInsertUserHandler(zts *dboperate.ZenTaoService) func(c *gin.Context) 
 
 		// 执行完毕
 		c.JSON(http.StatusOK, gin.H{
+			"err":    err,
 			"replay": replay,
 		})
 	}
@@ -101,35 +105,39 @@ func ZenTaoInsertUserProjectHandler(zts *dboperate.ZenTaoService) func(c *gin.Co
 		var u message.KkbProject
 		b, err := io.ReadAll(c.Request.Body)
 		if err != nil {
-			c.JSON(http.StatusAccepted, gin.H{
-				"msg": "请将数据json化传递,或者是io.ReadAll(c.Request.Body) failed",
-			})
+
 			err = errors.New(fmt.Sprintln("main.go | userGroup.POST(\"/ZenTaoInsertUser\") | io.ReadAll(c.Request.Body) failed , err: ", err))
 			fmt.Println(err)
+			c.JSON(http.StatusOK, gin.H{
+				"msg": "请将数据json化传递,或者是io.ReadAll(c.Request.Body) failed",
+				"err": err,
+			})
 			return
 		}
 		err = json.Unmarshal(b, &u)
 		if err != nil {
-			c.JSON(http.StatusAccepted, gin.H{
-				"msg": "json解析失败",
-			})
 			err = errors.New(fmt.Sprintln("main.go | userGroup.POST(\"/ZenTaoInsertUser\") | json.Unmarshal(b, &u) failed , err: ", err))
 			fmt.Println(err)
+			c.JSON(http.StatusOK, gin.H{
+				"msg": "json解析失败",
+				"err": err,
+			})
 			return
 		}
 		err = zts.ZenTaoInsertUserProject(u, &replay)
 		if err != nil {
-			c.JSON(http.StatusAccepted, gin.H{
+			err = errors.New(fmt.Sprintln("main.go | userGroup.POST(\"/ZenTaoInsertUser\") | zts.ZenTaoInsertUser failed , err: ", err))
+			fmt.Println(err)
+			c.JSON(http.StatusOK, gin.H{
 				"err":    err,
 				"replay": replay,
 			})
-			err = errors.New(fmt.Sprintln("main.go | userGroup.POST(\"/ZenTaoInsertUser\") | zts.ZenTaoInsertUser failed , err: ", err))
-			fmt.Println(err)
 			return
 		}
 
 		// 执行完毕
 		c.JSON(http.StatusOK, gin.H{
+			"err":    err,
 			"replay": replay,
 		})
 	}

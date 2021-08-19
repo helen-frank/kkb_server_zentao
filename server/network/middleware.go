@@ -20,12 +20,12 @@ func ZenTaoUserTokenCheck() gin.HandlerFunc {
 		path := utils.ObtainPath()
 		err := json.Unmarshal(utils.ReadConfig(path+"/etc/Account.json"), &u1)
 		if err != nil {
-			c.JSON(http.StatusAccepted, gin.H{
-				"msg": "打开etc/Account.json失败",
-			})
 			err = errors.New(fmt.Sprintln("network.go | ZenTaoTokenCheck() | json.Unmarshal(utils.ReadConfig(\"etc/Account.json\"), &u1) failed , err: ", err))
-
 			fmt.Println(err)
+			c.JSON(http.StatusOK, gin.H{
+				"msg": "打开etc/Account.json失败",
+				"err": err,
+			})
 			return
 		}
 		var u message.Kkb
@@ -35,27 +35,29 @@ func ZenTaoUserTokenCheck() gin.HandlerFunc {
 		c.Request.Body = io.NopCloser(bytes.NewBuffer(b))
 
 		if err != nil {
-			c.JSON(http.StatusAccepted, gin.H{
-				"msg": "请将数据json化传递,或者是io.ReadAll(c.Request.Body) failed",
-			})
 			err = errors.New(fmt.Sprintln("main.go | userGroup.POST(\"/ZenTaoInsertUser\") | io.ReadAll(c.Request.Body) failed , err: ", err))
 			fmt.Println(err)
+			c.JSON(http.StatusOK, gin.H{
+				"msg": "请将数据json化传递,或者是io.ReadAll(c.Request.Body) failed",
+				"err": err,
+			})
 			return
 		}
 
 		err = json.Unmarshal(b, &u)
 		if err != nil {
-			c.JSON(http.StatusAccepted, gin.H{
-				"msg": "json解析失败",
-			})
+
 			err = errors.New(fmt.Sprintln("main.go | userGroup.POST(\"/ZenTaoInsertUser\") | json.Unmarshal(b, &u) failed , err: ", err))
 			fmt.Println(err)
+			c.JSON(http.StatusOK, gin.H{
+				"msg": "json解析失败",
+				"err": err,
+			})
 			return
 		}
 		if u.Token == "" {
-			c.JSON(http.StatusAccepted, gin.H{
-				"code": 2003,
-				"msg":  "请求体中token为空",
+			c.JSON(http.StatusOK, gin.H{
+				"err": "请求体中token为空",
 			})
 			c.Abort()
 			return
@@ -63,11 +65,10 @@ func ZenTaoUserTokenCheck() gin.HandlerFunc {
 		mc, err := utils.ParseToken(u.Token)
 		//fmt.Println(mc)
 		if err != nil {
-			c.JSON(http.StatusAccepted, gin.H{
-				"code": 2005,
-				"msg":  "无效的token",
+			c.JSON(http.StatusOK, gin.H{
+				"msg": "无效的token",
+				"err": err,
 			})
-
 			return
 		}
 
@@ -80,9 +81,9 @@ func ZenTaoUserTokenCheck() gin.HandlerFunc {
 
 		}
 		if !exist {
-			c.JSON(http.StatusAccepted, gin.H{
+			c.JSON(http.StatusOK, gin.H{
 				"apiKey": mc.ApiKey,
-				"msg":    "apiKey不存在，请重新获取token",
+				"err":    "apiKey不存在，请重新获取token",
 			})
 			return
 		}
@@ -96,12 +97,14 @@ func ZenTaoProjectTokenCheck() gin.HandlerFunc {
 		path := utils.ObtainPath()
 		err := json.Unmarshal(utils.ReadConfig(path+"/etc/Account.json"), &u1)
 		if err != nil {
-			c.JSON(http.StatusAccepted, gin.H{
-				"msg": "打开etc/Account.json失败",
-			})
+
 			err = errors.New(fmt.Sprintln("network.go | ZenTaoTokenCheck() | json.Unmarshal(utils.ReadConfig(\"etc/Account.json\"), &u1) failed , err: ", err))
 
 			fmt.Println(err)
+			c.JSON(http.StatusOK, gin.H{
+				"msg": "打开etc/Account.json失败",
+				"err": err,
+			})
 			return
 		}
 		var u message.KkbProject
@@ -111,27 +114,30 @@ func ZenTaoProjectTokenCheck() gin.HandlerFunc {
 		c.Request.Body = io.NopCloser(bytes.NewBuffer(b))
 
 		if err != nil {
-			c.JSON(http.StatusAccepted, gin.H{
-				"msg": "请将数据json化传递,或者是io.ReadAll(c.Request.Body) failed",
-			})
+
 			err = errors.New(fmt.Sprintln("main.go | userGroup.POST(\"/ZenTaoInsertUser\") | io.ReadAll(c.Request.Body) failed , err: ", err))
 			fmt.Println(err)
+			c.JSON(http.StatusOK, gin.H{
+				"msg": "请将数据json化传递,或者是io.ReadAll(c.Request.Body) failed",
+				"err": err,
+			})
 			return
 		}
 
 		err = json.Unmarshal(b, &u)
 		if err != nil {
-			c.JSON(http.StatusAccepted, gin.H{
-				"msg": "json解析失败",
-			})
+
 			err = errors.New(fmt.Sprintln("main.go | userGroup.POST(\"/ZenTaoInsertUser\") | json.Unmarshal(b, &u) failed , err: ", err))
 			fmt.Println(err)
+			c.JSON(http.StatusOK, gin.H{
+				"msg": "json解析失败",
+				"err": err,
+			})
 			return
 		}
 		if u.Token == "" {
-			c.JSON(http.StatusAccepted, gin.H{
-				"code": 2003,
-				"msg":  "请求体中token为空",
+			c.JSON(http.StatusOK, gin.H{
+				"err": "请求体中token为空",
 			})
 			c.Abort()
 			return
@@ -139,9 +145,9 @@ func ZenTaoProjectTokenCheck() gin.HandlerFunc {
 		mc, err := utils.ParseToken(u.Token)
 
 		if err != nil {
-			c.JSON(http.StatusAccepted, gin.H{
-				"code": 2005,
-				"msg":  "无效的token",
+			c.JSON(http.StatusOK, gin.H{
+				"msg": "无效的token",
+				"err": err,
 			})
 
 			return
@@ -156,9 +162,9 @@ func ZenTaoProjectTokenCheck() gin.HandlerFunc {
 
 		}
 		if !exist {
-			c.JSON(http.StatusAccepted, gin.H{
+			c.JSON(http.StatusOK, gin.H{
 				"apiKey": mc.ApiKey,
-				"msg":    "apiKey不存在，请重新获取token",
+				"err":    "apiKey不存在，请重新获取token",
 			})
 			return
 		}
