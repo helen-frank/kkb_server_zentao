@@ -125,22 +125,6 @@ port = 10227
 | apiKey    | 接口密钥 |      |
 | secretKey | 通用密钥 |      |
 
-这些可在config/Account.json里添加
-
-```json
-[
-    {
-        "userName":"helen",
-        "password":"010227"
-    },{
-        "userName":"test1",
-        "password":"010227"
-    }
-]
-
-```
-
-
 
 
 
