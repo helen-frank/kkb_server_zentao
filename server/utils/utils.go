@@ -8,15 +8,26 @@ import (
 	"io/ioutil"
 	"kkb-zentao-server/common/message"
 	"os"
+	"os/exec"
+	"path/filepath"
+	"strings"
 	"time"
 
 	"github.com/dgrijalva/jwt-go"
 )
 
 type MyClaims struct {
-	UserName string `json:"userName"`
-	Password string `json:"password"`
+	ApiKey    string `json:"apiKey"`
+	SecretKey string `json:"secretKey"`
 	jwt.StandardClaims
+}
+
+func ObtainPath() string {
+	file, _ := exec.LookPath(os.Args[0])
+	path, _ := filepath.Abs(file)
+	index := strings.LastIndex(path, string(os.PathSeparator))
+	path = path[:index]
+	return path
 }
 
 // MD5字符串
@@ -60,12 +71,10 @@ func StringStitching(str ...string) string {
 }
 
 // GenToken 生成JWT
-func GenToken(username, password string) (string, error) {
-	// 创建一个我们自己的声明
-	//fmt.Println("mc", username, password)
+func GenToken(apiKey, secretKey string) (string, error) {
 	mc := MyClaims{
-		UserName: username, // 自定义字段
-		Password: password,
+		ApiKey:    apiKey, // 自定义字段
+		SecretKey: secretKey,
 		StandardClaims: jwt.StandardClaims{
 			ExpiresAt: time.Now().Add(message.TokenExpireDuration).Unix(), // 过期时间
 			Issuer:    "helen",                                            // 签发人

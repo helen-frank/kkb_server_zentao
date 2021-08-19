@@ -81,6 +81,6 @@ type UserProject struct {
 
 // 获取token校验
 type UserInfo struct {
-	UserName string `json:"userName"`
-	Password string `json:"password"`
+	ApiKey    string `json:"apiKey"`
+	SecretKey string `json:"secretKey"`
 }

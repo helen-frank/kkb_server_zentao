@@ -17,7 +17,8 @@ import (
 func ZenTaoUserTokenCheck() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		var u1 []message.UserInfo
-		err := json.Unmarshal(utils.ReadConfig("etc/Account.json"), &u1)
+		path := utils.ObtainPath()
+		err := json.Unmarshal(utils.ReadConfig(path+"/etc/Account.json"), &u1)
 		if err != nil {
 			c.JSON(http.StatusAccepted, gin.H{
 				"msg": "打开etc/Account.json失败",
@@ -72,7 +73,7 @@ func ZenTaoUserTokenCheck() gin.HandlerFunc {
 
 		exist := false
 		for _, v := range u1 {
-			if v.UserName == mc.UserName {
+			if v.SecretKey == mc.SecretKey {
 				exist = true
 				break
 			}
@@ -80,8 +81,8 @@ func ZenTaoUserTokenCheck() gin.HandlerFunc {
 		}
 		if !exist {
 			c.JSON(http.StatusAccepted, gin.H{
-				"username": mc.UserName,
-				"msg":      "用户不存在，请重新获取token",
+				"apiKey": mc.ApiKey,
+				"msg":    "apiKey不存在，请重新获取token",
 			})
 			return
 		}
@@ -92,7 +93,8 @@ func ZenTaoUserTokenCheck() gin.HandlerFunc {
 func ZenTaoProjectTokenCheck() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		var u1 []message.UserInfo
-		err := json.Unmarshal(utils.ReadConfig("etc/Account.json"), &u1)
+		path := utils.ObtainPath()
+		err := json.Unmarshal(utils.ReadConfig(path+"/etc/Account.json"), &u1)
 		if err != nil {
 			c.JSON(http.StatusAccepted, gin.H{
 				"msg": "打开etc/Account.json失败",
@@ -135,7 +137,7 @@ func ZenTaoProjectTokenCheck() gin.HandlerFunc {
 			return
 		}
 		mc, err := utils.ParseToken(u.Token)
-		//fmt.Println(mc)
+
 		if err != nil {
 			c.JSON(http.StatusAccepted, gin.H{
 				"code": 2005,
@@ -147,7 +149,7 @@ func ZenTaoProjectTokenCheck() gin.HandlerFunc {
 
 		exist := false
 		for _, v := range u1 {
-			if v.UserName == mc.UserName {
+			if v.ApiKey == mc.ApiKey {
 				exist = true
 				break
 			}
@@ -155,8 +157,8 @@ func ZenTaoProjectTokenCheck() gin.HandlerFunc {
 		}
 		if !exist {
 			c.JSON(http.StatusAccepted, gin.H{
-				"username": mc.UserName,
-				"msg":      "用户不存在，请重新获取token",
+				"apiKey": mc.ApiKey,
+				"msg":    "apiKey不存在，请重新获取token",
 			})
 			return
 		}

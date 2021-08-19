@@ -1,9 +1,9 @@
 [
     {
-        "userName":"helen",
-        "password":"010227"
+        "apiKey":"helen",
+        "secretKey":"010227"
     },{
-        "userName":"test1",
-        "password":"010227"
+        "apiKey":"test1",
+        "secretKey":"010227"
     }
 ]

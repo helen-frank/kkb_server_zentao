@@ -30,8 +30,8 @@ func main() {
 		}
 	}()
 
-	getToken := "http://127.0.0.1:10227/auth?username=test1&password=010227"
-	// getToken := "http://39.103.184.136:10227/auth?username=test1&password=010227"
+	getToken := "http://127.0.0.1:10227/auth?apiKey=test1&secretKey=010227"
+	// getToken := "http://39.103.184.136:10227/auth?apiKey=test1&secretKey=010227"
 	resp1, err := http.Get(getToken)
 	if err != nil {
 		panic(err)
@@ -48,12 +48,12 @@ func main() {
 	fmt.Println("KkbUserLookUp service start")
 
 	// 添加用户
-	// zentaouserinserturl := "http://127.0.0.1:10227/user/ZenTaoInsertUser"
-	// UserInsertStr := "SELECT suanke_student.real_name,suanke_user.mobile_number,suanke_user.email FROM suanke_user,suanke_student  where suanke_user.id=suanke_student.user_id  ORDER BY suanke_student.user_id limit 100;"
-	// dboperate.KkbUserInsert(db_kkb, UserInsertStr, zentaouserinserturl, gettokens.Token)
+	zentaouserinserturl := "http://127.0.0.1:10227/user/ZenTaoInsertUser"
+	UserInsertStr := "SELECT suanke_student.real_name,suanke_user.mobile_number,suanke_user.email FROM suanke_user,suanke_student  where suanke_user.id=suanke_student.user_id  ORDER BY suanke_student.user_id limit 100;"
+	dboperate.KkbUserInsert(db_kkb, UserInsertStr, zentaouserinserturl, gettokens.Token)
 
 	// 添加用户到项目
-	zentaouserinserturl := "http://127.0.0.1:10227/project/ZenTaoInsertUserProject"
-	UserProjectInsertStr := "SELECT suanke_user.mobile_number FROM suanke_user,suanke_student  where suanke_user.id=suanke_student.user_id  ORDER BY suanke_student.user_id limit 5"
-	dboperate.KkbUserProjectInsert(db_kkb, UserProjectInsertStr, zentaouserinserturl, gettokens.Token)
+	// zentaouserinserturl := "http://127.0.0.1:10227/project/ZenTaoInsertUserProject"
+	// UserProjectInsertStr := "SELECT suanke_user.mobile_number FROM suanke_user,suanke_student  where suanke_user.id=suanke_student.user_id  ORDER BY suanke_student.user_id limit 5"
+	// dboperate.KkbUserProjectInsert(db_kkb, UserProjectInsertStr, zentaouserinserturl, gettokens.Token)
 }

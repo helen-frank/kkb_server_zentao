@@ -9,24 +9,17 @@ import (
 	"kkb-zentao-server/server/dboperate"
 	"kkb-zentao-server/server/utils"
 	"net/http"
-	"os"
-	"os/exec"
-	"path/filepath"
-	"strings"
 
 	"github.com/gin-gonic/gin"
 )
 
 // 生成token
 func ZenTaoAuthHandler(c *gin.Context) {
-	file, _ := exec.LookPath(os.Args[0])
-	path, _ := filepath.Abs(file)
-	index := strings.LastIndex(path, string(os.PathSeparator))
-	path = path[:index]
-	// 用户发送用户名和密码过来
+	path := utils.ObtainPath()
+	// 用户发送ApiKey和SecretKey过来
 	var user message.UserInfo
-	user.UserName = c.Query("username")
-	user.Password = c.Query("password")
+	user.ApiKey = c.Query("apiKey")
+	user.SecretKey = c.Query("secretKey")
 	var u []message.UserInfo
 	err := json.Unmarshal(utils.ReadConfig(path+"/etc/Account.json"), &u)
 	if err != nil {
@@ -39,13 +32,13 @@ func ZenTaoAuthHandler(c *gin.Context) {
 	}
 	uMap := make(map[string]string)
 	for _, v := range u {
-		uMap[v.UserName] = v.Password
+		uMap[v.ApiKey] = v.SecretKey
 	}
 
 	// 校验用户名和密码是否正确
-	if uMap[user.UserName] == user.Password {
+	if uMap[user.ApiKey] == user.SecretKey {
 		// 生成Token
-		tokenString, _ := utils.GenToken(user.UserName, user.Password)
+		tokenString, _ := utils.GenToken(user.ApiKey, user.SecretKey)
 		c.JSON(http.StatusOK, gin.H{
 			"msg":   "success",
 			"token": tokenString,
