@@ -181,7 +181,7 @@ func ZenTaoInsertUserHandler(zts *dboperate.ZenTaoService) func(c *gin.Context) 
 func ZenTaoInsertUserProjectHandler(zts *dboperate.ZenTaoService) func(c *gin.Context) {
 	return func(c *gin.Context) {
 		var replay string
-		var u message.Kkb
+		var u message.KkbProject
 		b, err := io.ReadAll(c.Request.Body)
 		if err != nil {
 			c.JSON(http.StatusAccepted, gin.H{

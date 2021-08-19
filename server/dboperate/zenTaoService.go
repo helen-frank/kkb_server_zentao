@@ -57,27 +57,28 @@ func (zts *ZenTaoService) ZenTaoInsertUser(ku message.Kkb, replay *string) error
 	return err
 }
 
-func (zts *ZenTaoService) ZenTaoInsertUserProject(k message.Kkb, replay *string) error {
+func (zts *ZenTaoService) ZenTaoInsertUserProject(k message.KkbProject, replay *string) (err error) {
 	up := message.UserProject{
 		Role:  "研发",
 		Hours: 7.0,
-		Kkb: message.Kkb{
+		KkbProject: message.KkbProject{
 			Root:    k.Root,
 			Account: k.Account,
 			Days:    k.Days,
 		},
 	}
 	zenTaoInsertUserProject := "INSERT IGNORE INTO zt_team(root,account,days,role,hours) values (?,?,?,?,?)"
+	for _, v := range up.Account {
+		r, err := zts.Db_zentao.Exec(zenTaoInsertUserProject, up.Root, v, up.Days, up.Role, up.Hours)
+		if err != nil {
+			fmt.Printf("zenTaoService.go | ZenTaoInsertUserProject | zts.Db_zentao.Exec -> zenTaoInsertUserProject failed, err: %v\n", err)
+			return err
+		}
 
-	r, err := zts.Db_zentao.Exec(zenTaoInsertUserProject, up.Root, up.Account, up.Days, up.Role, up.Hours)
-	if err != nil {
-		fmt.Printf("zenTaoService.go | ZenTaoInsertUserProject | zts.Db_zentao.Exec -> zenTaoInsertUserProject failed, err: %v\n", err)
-		return err
+		// 后面写个日志
+		fmt.Print("添加到zt_team | ")
+		fmt.Println(r.LastInsertId())
+		*replay += fmt.Sprintln(r.LastInsertId())
 	}
-
-	// 后面写个日志
-	fmt.Print("添加到zt_team | ")
-	fmt.Println(r.LastInsertId())
-	*replay = fmt.Sprintln(r.LastInsertId())
 	return err
 }

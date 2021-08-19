@@ -25,7 +25,7 @@ type SqlConfig struct {
 	MaxIdleConns int    `json:"maxIdleConns"`
 }
 
-// 开课吧添加用户
+// 开课吧用户
 type Kkb struct {
 	RealName     string `json:"realName"`
 	MobileNumber string `json:"mobileNumber"`
@@ -36,6 +36,19 @@ type Kkb struct {
 	Password     string `json:"password"`
 	Days         int    `json:"days"`
 	Root         int    `json:"root"`
+}
+
+// 开课吧用户批量进项目
+type KkbProject struct {
+	RealName     string   `json:"realName"`
+	MobileNumber string   `json:"mobileNumber"`
+	Email        string   `json:"email"`
+	Gender       string   `json:"gender"`
+	Token        string   `json:"token"`
+	Account      []string `json:"account"`
+	Password     string   `json:"password"`
+	Days         int      `json:"days"`
+	Root         int      `json:"root"`
 }
 
 // ZenTao用户
@@ -61,7 +74,7 @@ type User struct {
 
 // zentao项目
 type UserProject struct {
-	Kkb
+	KkbProject
 	Role  string  `json:"role"`
 	Hours float32 `json:"hours"`
 }
