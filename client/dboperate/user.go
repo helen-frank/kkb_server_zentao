@@ -134,6 +134,7 @@ func KkbUserProjectInsert(db1 *sql.DB, sqlStr, url, token string) {
 		t++
 	}
 	jsonStr, err := json.Marshal(u)
+	fmt.Println(string(jsonStr))
 	if err != nil {
 		err = errors.New(fmt.Sprintln("user.go | KkbUserLookUp | json.Marshal failed, err:\n", err))
 		fmt.Println(err)
