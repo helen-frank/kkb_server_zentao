@@ -32,11 +32,11 @@ func (zts *ZenTaoService) ZenTaoInsertUser(ku message.Kkb, replay *string) error
 		u.Gender = "f"
 	}
 
-	zenTaoInsertUser := "INSERT IGNORE INTO zt_user(company,account,password,realname,gender,role,mobile,email,commiter,avatar,nature,analysis,strategy) values (?,?,?,?,?,?,?,?,?,?,?,?,?)"
+	zenTaoInsertUserStr := "INSERT IGNORE INTO zt_user(company,account,password,realname,gender,role,mobile,email,commiter,avatar,nature,analysis,strategy) values (?,?,?,?,?,?,?,?,?,?,?,?,?)"
 
-	r, err := zts.Db_zentao.Exec(zenTaoInsertUser, u.Company, u.Account, u.Password, u.RealName, u.Gender, u.Role, u.MobileNumber, u.Email, u.Commiter, u.Avatar, u.Nature, u.Analysis, u.Strategy)
+	r, err := zts.Db_zentao.Exec(zenTaoInsertUserStr, u.Company, u.Account, u.Password, u.RealName, u.Gender, u.Role, u.MobileNumber, u.Email, u.Commiter, u.Avatar, u.Nature, u.Analysis, u.Strategy)
 	if err != nil {
-		fmt.Printf("user.go | KkbUserLookUp | db2.Exec -> zenTaoInsertUser failed, err: %v\n", err)
+		fmt.Printf("user.go | KkbUserLookUp | db2.Exec -> zenTaoInsertUserStr failed, err: %v\n", err)
 		return err
 	}
 
@@ -67,11 +67,11 @@ func (zts *ZenTaoService) ZenTaoInsertUserProject(k message.KkbProject, replay *
 			Days:    k.Days,
 		},
 	}
-	zenTaoInsertUserProject := "INSERT IGNORE INTO zt_team(root,account,days,role,hours) values (?,?,?,?,?)"
+	zenTaoInsertUserProjectStr := "INSERT IGNORE INTO zt_team(root,account,days,role,hours) values (?,?,?,?,?)"
 	for _, v := range up.Account {
-		r, err := zts.Db_zentao.Exec(zenTaoInsertUserProject, up.Root, v, up.Days, up.Role, up.Hours)
+		r, err := zts.Db_zentao.Exec(zenTaoInsertUserProjectStr, up.Root, v, up.Days, up.Role, up.Hours)
 		if err != nil {
-			fmt.Printf("zenTaoService.go | ZenTaoInsertUserProject | zts.Db_zentao.Exec -> zenTaoInsertUserProject failed, err: %v\n", err)
+			fmt.Printf("zenTaoService.go | ZenTaoInsertUserProject | zts.Db_zentao.Exec -> zenTaoInsertUserProjectStr failed, err: %v\n", err)
 			return err
 		}
 
