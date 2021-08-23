@@ -36,6 +36,8 @@ type Kkb struct {
 	Password     string `json:"password"`
 	Days         int    `json:"days"`
 	Root         int    `json:"root"`
+	DeptId       int    `json:"deptId"`
+	DeptName     string `json:"deptName"`
 }
 
 // 开课吧用户批量进项目
@@ -64,6 +66,8 @@ type User struct {
 	Role         string `json:"role"`
 	Gender       string `json:"gender"`
 	Token        string `json:"token"`
+	DeptId       int    `json:"deptId"`
+	DeptName     string `json:"deptName"`
 	// 暂时未知参数，设为 nil
 	Commiter interface{} `json:"commiter"`
 	Avatar   interface{} `json:"avatar"`

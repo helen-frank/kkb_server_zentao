@@ -22,10 +22,8 @@ import (
 var db_zentao *sql.DB //连接池对象
 
 func main() {
-	// file, _ := exec.LookPath(os.Args[0])
-	// path, _ := filepath.Abs(file)
-	// index := strings.LastIndex(path, string(os.PathSeparator))
-	// path = path[:index]
+	// 设置成release 模式
+	gin.SetMode(gin.ReleaseMode)
 	path := utils.ObtainPath()
 	cfg, err := ini.Load(path + "/etc/my.cnf")
 	if err != nil {
@@ -49,11 +47,6 @@ func main() {
 	userGroup := r.Group("/user", network.ZenTaoUserTokenCheck())
 	{
 		userGroup.POST("/ZenTaoInsertUser", network.ZenTaoInsertUserHandler(&zts))
-	}
-
-	projectGroup := r.Group("/project", network.ZenTaoProjectTokenCheck())
-	{
-		projectGroup.POST("/ZenTaoInsertUserProject", network.ZenTaoInsertUserProjectHandler(&zts))
 	}
 	r.Run(":" + Port)
 }

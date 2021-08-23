@@ -1,0 +1,1352 @@
+connect zentao sql success
+[GIN] 2021/08/23 - 20:45:56 | 200 |      262.38µs |       127.0.0.1 | GET      "/auth?apiKey=test1&secretKey=010227"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.545151ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    6.143182ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.417253ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.619661ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.509647ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.959803ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.629423ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    5.581628ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    5.029662ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.434405ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |     4.60978ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.883261ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.744211ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |   12.608664ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    7.242422ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |     5.82242ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.837842ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    5.160054ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    5.159716ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.376343ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.911558ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    5.087049ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.043729ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.433077ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |     3.92264ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.992369ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.235062ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.806518ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.834958ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |     4.67892ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.785975ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.868752ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.562096ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.272599ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.284184ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.466733ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.334791ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.340025ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.436306ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    5.316838ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    6.414594ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |   28.555463ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |   20.334341ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    9.700032ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.642004ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.529137ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.469356ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.586724ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    6.528466ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.020625ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.686999ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.061687ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.738851ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.652592ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.753467ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.600354ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.842482ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.753476ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.570991ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.800646ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.727543ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.656934ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.073753ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.525018ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.849237ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.775345ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.566982ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.877817ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |     4.11291ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.613564ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.667197ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.827127ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |     6.09545ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.232655ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.525843ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.751821ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    6.224323ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |     3.79436ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.980753ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.156542ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |     5.98724ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.286134ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.999365ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |     4.00394ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.190935ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.759254ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.057923ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.196237ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.027538ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.029805ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.927727ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.191133ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.045235ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.998547ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.301111ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.121276ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.915386ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.097761ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |     4.38914ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    5.331694ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.121504ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.616358ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.835439ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.913121ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.804202ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.060642ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.532397ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.808678ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.024182ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.868067ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |     3.82544ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.434275ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.014627ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.546985ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.295852ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    5.058139ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.479788ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.522832ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.302959ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |     4.32244ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |      3.8899ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.045856ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.434996ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.033526ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.864028ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.521074ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.188079ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.167042ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.797339ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.896628ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.826652ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.119906ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.132129ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.618031ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.207253ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.202981ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.138469ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.941875ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    4.047514ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.654128ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.977786ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.541415ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |     3.68021ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.739362ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:56 | 200 |    3.630729ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |     3.95092ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.824017ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.550401ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.561466ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.950675ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.590469ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.753889ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |     3.94934ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.007171ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.431726ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.432123ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.460212ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.136438ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.397919ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.294607ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |     4.51611ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.485416ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |     3.64697ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.660525ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.467084ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.912149ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.539094ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.654576ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.781198ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.625165ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.583828ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.964357ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.528583ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.864334ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.952559ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.630011ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.502297ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.475336ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.329755ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.233475ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.990692ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |     3.97329ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.116694ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |     4.86275ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    9.051078ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.755516ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.681991ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.961006ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.642482ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.496188ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.862284ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.618557ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.892861ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |     3.92566ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.833333ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.671108ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.237305ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.404194ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.895643ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.809101ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.261843ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.054709ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.271574ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |   12.558567ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.700823ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.429284ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.244459ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.504478ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.633246ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.015926ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |     5.48776ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.816214ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.805106ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.571587ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.844842ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    7.025547ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.210993ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |     4.88942ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.914203ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.505404ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.485748ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.343752ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    5.475192ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.533733ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |     3.66841ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.589803ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.523989ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.951774ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.553552ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.221599ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.857145ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.772297ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.569066ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.898871ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.440887ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.903841ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |     5.72823ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.572348ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |     3.66207ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |     3.63681ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.753404ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.629189ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.019621ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.707061ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.497581ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.687787ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.340102ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.595204ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.563938ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.894838ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.532668ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.726315ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.700382ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    9.278586ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.612324ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.925817ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.762958ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.555108ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |     3.80375ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.122231ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |   10.186045ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    9.220432ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |   24.853844ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    7.871155ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.928021ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.720229ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    4.088913ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    6.029107ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.730564ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
+
+添加到zt_user | 0 <nil>
+添加到zt_usergroup | 0 <nil>
+添加到zt_dept | 0 <nil>
+[GIN] 2021/08/23 - 20:45:57 | 200 |    3.638924ms |       127.0.0.1 | POST     "/user/ZenTaoInsertUser"
