@@ -13,6 +13,7 @@ import (
 	"io/ioutil"
 	"kkb-zentao-server/client/dboperate"
 	"net/http"
+	"strconv"
 )
 
 var db_kkb *sql.DB
@@ -30,7 +31,7 @@ func main() {
 		}
 	}()
 
-	getToken := "http://127.0.0.1:10227/auth?apiKey=test1&secretKey=010227"
+	getToken := "http://39.98.121.3:10227/auth?apiKey=3C4mjFIdvqfgzl2LTER095V732f8VNp5&secretKey=bD0SDba8Hdn8721EIgUUtzQ6JgHe6clu"
 	// getToken := "http://39.103.184.136:10227/auth?apiKey=test1&secretKey=010227"
 	resp1, err := http.Get(getToken)
 	if err != nil {
@@ -48,12 +49,30 @@ func main() {
 	fmt.Println("KkbUserLookUp service start")
 
 	// 添加用户
-	zentaouserinserturl := "http://127.0.0.1:10227/user/ZenTaoInsertUser"
-	UserInsertStr := "SELECT suanke_student.real_name,suanke_user.mobile_number,suanke_user.email FROM suanke_user,suanke_student  where suanke_user.id=suanke_student.user_id  ORDER BY suanke_student.user_id limit 100;"
-	dboperate.KkbUserInsert(db_kkb, UserInsertStr, zentaouserinserturl, gettokens.Token)
+	// zentaouserinserturl := "http://127.0.0.1:10227/user/ZenTaoInsertUser"
+	// UserInsertStr := "SELECT suanke_student.real_name,suanke_user.mobile_number,suanke_user.email FROM suanke_user,suanke_student  where suanke_user.id=suanke_student.user_id  ORDER BY suanke_student.user_id limit 100;"
+	// dboperate.KkbUserInsert(db_kkb, UserInsertStr, zentaouserinserturl, gettokens.Token)
 
 	// 添加用户到项目
 	// zentaouserinserturl := "http://127.0.0.1:10227/project/ZenTaoInsertUserProject"
 	// UserProjectInsertStr := "SELECT suanke_user.mobile_number FROM suanke_user,suanke_student  where suanke_user.id=suanke_student.user_id  ORDER BY suanke_student.user_id limit 5"
 	// dboperate.KkbUserProjectInsert(db_kkb, UserProjectInsertStr, zentaouserinserturl, gettokens.Token)
+
+	zenTaoInsertUserUrl := "http://39.98.121.3:10227/user/ZenTaoInsertUser"
+	zenTaoInsertUserProjectUrl := "http://39.98.121.3:10227/project/ZenTaoInsertUserProject"
+	// zentao内项目id
+	projectId := 65
+	planId := 64
+	days := 365
+	// 选择planId课的电话
+	UserProjectInsertStr := "SELECT suanke_user.mobile_number FROM suanke_user,suanke_student_plan,suanke_student  where suanke_user.id=suanke_student.user_id and suanke_student.id=suanke_student_plan.student_id and is_available !=0 and  suanke_student_plan.plan_id=" + strconv.Itoa(planId) + " ORDER BY suanke_student.user_id"
+	for i := 1; i < 64; i++ {
+		projectId = i + 1
+		planId = i
+		dboperate.KkbUserProjectInsert(db_kkb, UserProjectInsertStr, zenTaoInsertUserUrl, zenTaoInsertUserProjectUrl, getToken, projectId, days)
+		fmt.Println(UserProjectInsertStr)
+	}
+
 }
+
+// SELECT suanke_user.mobile_number FROM suanke_user,suanke_student_plan,suanke_student  where suanke_user.id=suanke_student.user_id and suanke_student.id=suanke_student_plan.student_id and is_available !=0 and  suanke_student_plan.plan_id=64 ORDER BY suanke_student.user_id

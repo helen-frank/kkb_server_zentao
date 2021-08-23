@@ -101,8 +101,9 @@ func KkbUserInsert(db1 *sql.DB, sqlStr, url, token string) {
 	}
 }
 
-// 查询kkb用户数据并插入到zentao
-func KkbUserProjectInsert(db1 *sql.DB, sqlStr, url, token string) {
+// 查询kkb用户数据并插入到zentao项目
+func KkbUserProjectInsert(db1 *sql.DB, sqlStr, url1, url2, token string, root,days int) {
+
 	var u message.KkbProject
 	var tempKkbAccout string
 	u.Token = token
@@ -115,8 +116,8 @@ func KkbUserProjectInsert(db1 *sql.DB, sqlStr, url, token string) {
 	// 非常重要：关闭rows释放持有的数据库链接
 	defer rows.Close()
 	t := 0
-	u.Root = 2
-	u.Days = 7
+	u.Root = root
+	u.Days = days
 	// 循环读取结果集中的数据
 	for rows.Next() {
 		if err != nil {
@@ -125,6 +126,10 @@ func KkbUserProjectInsert(db1 *sql.DB, sqlStr, url, token string) {
 			return
 		}
 		err = rows.Scan(&tempKkbAccout)
+		// 添加用户
+		userInsertStr := "SELECT suanke_student.real_name,suanke_user.mobile_number,suanke_user.email FROM suanke_user,suanke_student  where suanke_user.id=suanke_student.user_id and suanke_user.mobile_number=" + tempKkbAccout + ";"
+		KkbUserInsert(db1, userInsertStr, url1, token)
+
 		u.Account = append(u.Account, tempKkbAccout)
 		if err != nil {
 			err = errors.New(fmt.Sprintln("user.go | KkbUserLookUp | rows.scan failed, err:\n", err))
@@ -141,7 +146,7 @@ func KkbUserProjectInsert(db1 *sql.DB, sqlStr, url, token string) {
 		return
 	}
 
-	req, err := http.NewRequest("POST", url, bytes.NewBuffer(jsonStr))
+	req, err := http.NewRequest("POST", url2, bytes.NewBuffer(jsonStr))
 	if err != nil {
 		err = errors.New(fmt.Sprintln("user.go | KkbUserLookUp | json.Marshal failed, err:\n", err))
 		fmt.Println(err)
